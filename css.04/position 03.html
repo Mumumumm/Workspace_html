@@ -13,46 +13,45 @@
             margin: 0 auto;
             width: 1000px;
             border: 1px solid black;
-            position: relative;
+            position: static;
         }
 
         .box-1{
             width: 300px;
             height: 100px;
             background-color: aquamarine;
-            position: relative;
-            top: 30px;
-            left: 30px;
+            position: static;
         }
 
         .box-2{
-            width: 400px;
-            height: 100px;
+            width: 150px;
+            height: 500px;
             background-color: pink;
-            position: relative;
-            bottom: 30px;
-            right: 450px;
+            position: fixed;
+            /* left: calc(((100% - 1000px) / 2) + 1000px); */
+            top: 50px;
+            left: 500px;
         }
 
         .box-3{
             width: 700px;
             height: 100px;
             background-color: lawngreen;
-            position: relative;
-            left: 50px;
-            bottom: 100px;
+            position: static;
         }
 
-        /* position 움직임은 각각 top 위쪽기준으로 아래로 밀림 bottom은 아래기준 위로 밀림 
-        left 좌측에서 우로 밀림 right 는 우측에서 좌로밀림 이다 */
+        .scroll{
+            height: 5000px;
+            border: 2px solid   black;
+        }
     </style>
 </head>
 <body>
-    <!-- 모든 요소는 position: static 을 기본으로 갖는다 -->
     <div class="wrap">
         <div class="box-1">자식상자</div>
-        <div class="box-2">자식상자</div>
+        <div class="box-2">position fiexd</div>
         <div class="box-3">자식상자</div>
+        <div class="scroll">스크롤</div>
     </div>
     
 </body>

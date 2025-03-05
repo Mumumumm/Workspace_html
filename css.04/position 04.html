@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>포지션</title>
+    <style>
+        *{padding: 0; margin: 0;}
+        body{
+            padding: 50px;
+            position: static;
+        }
+        .wrap{
+            margin: 0 auto;
+            width: 1000px;
+            border: 1px solid black;
+            position: static;
+        }
+
+        .box-1{
+            width: 300px;
+            height: 100px;
+            background-color: aquamarine;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            z-index: 1;
+        }
+
+        .box-2{
+            width: 400px;
+            height: 100px;
+            background-color: pink;
+            position: relative;
+            top: 50px;
+            left: 70px;
+            z-index: 2;
+
+        }
+
+        .box-3{
+            width: 700px;
+            height: 100px;
+            background-color: lawngreen;
+            position: relative;
+            top: 80px;
+            left: 40px;
+        }
+
+        .scroll{
+            border: 1px solid black;
+            height: 5000px;
+        }
+
+
+        /* <!--모달 창--> */
+        .modal-bg{
+            background-color: rgba(0, 0, 0, 0.1);
+            width: 100%;
+            height: 700px;
+            padding: 100px;
+            display: block;
+            
+        }
+
+        .modal-bg2{
+            padding: 100px;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(230,230,230,0.4);
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .modal-content{
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+            background-color: white;
+            margin-left: calc(50% - 250px);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box-1">자식상자</div>
+        <div class="box-2">자식상자</div>
+        <div class="box-3">자식상자</div>
+        <div class="scroll"> 스크롤 </div>
+    </div>
+
+    <!--모달창-->
+    <div class="modal-bg2">
+        <div class="modal-content">
+            <form action="">
+                <input type="text"><br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <button type="submit">전송</button>
+            </form>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
