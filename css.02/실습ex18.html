@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css</title>
+    <link rel="stylesheet" href="./css/ex18.css">
+</head>
+<body>
+    <!-- h1은 사이트명 h2는 고객센터라 가정 -->
+    
+        <div class="box-top">
+            <h3>일반게시판</h3>
+
+            <ol id="bread" class="clearfix">
+                <li>홈</li>
+                <li>게시판</li>
+                <li>일반게시판</li>
+            </ol>
+
+                <form>
+                    <div class="box-body">
+                        <label class="form" for="sel-board">게시판선택</label>
+                        <select id="sel-board">
+                            <option>선택해주세요</option>
+                            <option>공지사항</option>
+                            <option>가입인사</option>
+                            <option>자유게시판</option>
+                            <option>포토게시판</option>
+                        </select>
+                    </div>
+                    <div class="box-body">
+                        <label class="form" for="txt-box">제목</label>
+                        <input type="text" size="50%" id="txt-box" required>
+                    </div>
+                    <div class="box-body">
+                        <label class="form" for="pw">비밀번호</label>
+                        <input id="pw" type="password" required>
+                    </div>
+                    <div class="box-body">
+                        <span class="form">공개범위</span>
+                        <label for="me">본인</label>
+                        <input id="me" type="radio" name="range">
+
+                        <label for="log">로그인회원</label>
+                        <input id="log" type="radio" name="range">
+
+                        <label for="fr">친구</label>
+                        <input id="fr" type="radio" name="range">
+
+                        <label for="all">전체</label>
+                        <input id="all" type="radio" name="range">
+                    </div>
+
+                    <div class="box-body">
+                        <span class="form">허용범위</span>
+                        <label for="check-1">댓글허용</label>
+                        <input id="check-1" type="checkbox" name="check">
+
+                        <label for="check-2">답글허용</label>
+                        <input id="check-2" type="checkbox" name="check">
+
+                        <label for="check-3">좋아요허용</label>
+                        <input id="check-3" type="checkbox" name="check">
+                    </div>
+
+                    <div class="box-body">
+                        <textarea class="box-body" id="txt-area"></textarea>
+                    </div>
+                    <div class="box-body">
+                        <label for="file-txt" class="form">첨부파일</label>
+                        <input id="file-txt" type="file" >
+                    </div>
+                        <!--/폼그룹-->
+                    <div class="bt">
+                        <button type="submit">등록</button>
+                        <button type="reset">초기화</button>
+                    </div>
+                </form>
+        </div>
+</body>
+</html>

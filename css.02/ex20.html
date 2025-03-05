@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .color-st{
+            background-color: gainsboro;
+            padding: 20px;
+            width: 500px;
+        }
+
+        
+        .color-red{
+            background-color: red;
+            width: 800px;
+            clear: both;
+        }
+        .color-blue{
+            background-color: blue;
+            float: left;
+
+        }
+        .color-green{
+            background-color: #00ff00;
+            float: left;
+        }
+
+        /* clearfix */
+        .clearfix:before, .clearfix:after {
+            display: block; content: ""; line-height: 0;
+        }
+        .clearfix:after {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <!--start-->    
+        <div class="color-st">
+            <div class="color-blue">자식 박스 1</div>
+            <div class="color-green">자식 박스 2</div>
+        </div>
+        <div class="color-red">외부박스</div>
+    <!--end-->
+    </div>
+    
+</body>
+</html>

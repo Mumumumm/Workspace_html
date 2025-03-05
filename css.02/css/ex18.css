@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+body, div, ul, ol, li, dl, dt,
+h1, h2, h3, h4, h5, h6, 
+form, fieldset, legend, input, select, button 
+table, th, td, tr, textarea, 
+p{
+    margin: 0; padding: 0;
+}
+ul>li, ol>li{
+    list-style-type: none;
+}
+input, textarea, select{
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+
+/* <-----------------------------------------------------------> */
+
+h3{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+body{
+    background-color: #808080;
+    font-family: "맑은 고딕";
+    font-size: 12px;
+}
+body>.box-top{
+    background-color: #fff;
+    width: 800px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+body .box-body{
+    margin: 0 0 10px 0;
+}
+
+/* label{
+    border: 1px solid red;
+    display: inline-block; 
+
+} */
+
+#sel-board{
+    width: 200px;
+}
+#txt-box{
+    width:400px;
+}
+#pw{
+    width: 200px;
+}
+
+.form{
+    width: 80px;
+    display: inline-block;
+}
+input[name="range"],
+input[name="check"]
+{
+    margin: 0 15px 0 0;
+}
+#txt-area{
+    width: 486px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.bt{
+    border-top: 2px solid black;
+    padding: 15px 0 10px 0;
+    text-align: center;
+}
+.bt button{
+    width: 70px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+ol>li:not(:last-child)::after{
+    content: ">";
+    margin-left: 3px;
+}
+#bread>li{
+    float: left;
+    margin-right: 5px;
+}
+
+.clearfix{
+    clear: both;
+}

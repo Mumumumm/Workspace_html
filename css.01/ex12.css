@@ -1,0 +1,17 @@
+@charset "UTF-8";
+h1:hover{color: gray;}
+a[href]:active{color: yellow;} /* []이거 순서는 상관이 없는가? */
+a:hover[target="_blank"]{background-color: lightblue;} /* []이거 순서는 상관이 없는가? */
+a[target="_self"]:hover{background-color: brown;} /* []이거 순서는 상관이 없는가? */
+a:link{color: #ffffff; text-decoration: none;}
+a:visited{color: black;}
+
+tbody>tr:hover{background-color: orange;}
+tbody #steel:hover{background-color: slategray;}
+
+/* :: 가상요소 */
+/* : 가상클래스 */
+h2::before{content: "어렵다"; color: aqua; }
+h2::after{content: " 근데 재밌다"; color: paleturquoise;}
+.af::after{content: "☆☆☆☆☆☆☆☆☆☆☆☆☆";}
+/* 꾸밈을 위한 가상요소 스크린리더가 읽을수 없게 해주는것 */

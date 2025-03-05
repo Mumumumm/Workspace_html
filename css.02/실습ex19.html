@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css</title>
+    <link rel="stylesheet" href="./css/ex19.css">
+</head>
+<body>
+    <div class="div-main">
+        <h1>회원가입</h1>
+
+        <ol class="clearfix">
+            <li>홈</li>
+            <li>유저</li>
+            <li>회원가입</li>
+        </ol>
+
+        <form>
+            <div class="form-line">
+                <label for="id" class="form-title">아이디</label>
+                <input id="id" type="text" autocomplete="off">
+            </div>
+
+            <div class="form-line">
+                <label for="pw" class="form-title">패스워드</label>
+                <input id="pw" type="password">
+            </div>
+
+            <div class="form-line">
+                <label for="name" class="form-title">이름</label>
+                <input id="name" type="text" autocomplete="off">
+            </div>
+
+            <div class="form-line">
+                <label for="profile" class="form-title">프로필사진</label>
+                <input id="profile" type="file">
+            </div>
+
+            <div class="form-line">
+                <label for="address" class="form-title">주소</label>
+                <input type="text" placeholder="주소별류">
+                <input id="address" type="button" value="우편번호찾기">
+                <div class="text-address">
+                    <input type="text" placeholder="주소별류">
+                </div>
+            </div>
+
+            <div class="form-line">
+                <label for="call" class="form-title">이동통신사</label>
+                <select id="call">
+                    <option value="sel">선택해주세요</option>
+                    <option value="skt">SKT</option>
+                    <option value="kt">KT</option>
+                    <option value="lg">LGU+</option>
+                    <option value="free-skt">알뜰폰 skt</option>
+                    <option value="free-kt">알뜰폰 kt</option>
+                    <option value="free-lg">알뜰폰 lg</option>
+                </select>
+            </div>
+
+            <div class="form-line">
+                <span class="form-title">나이</span>
+                <label for="age10" class="radio-label">10대</label>
+                <input id="age10" type="radio" name="age">
+
+                <label for="age20" class="radio-label">20대</label>
+                <input id="age20" type="radio" name="age">
+
+                <label for="age30" class="radio-label">30대</label>
+                <input id="age30" type="radio" name="age">
+
+                <label for="age40" class="radio-label">40대</label>
+                <input id="age40" type="radio" name="age">
+
+                <label for="age-ot" class="radio-label">기타</label>
+                <input id="age-ot" type="radio" name="age">
+            </div>
+
+            <div class="form-line">
+                <span class="form-title">혈액형</span>
+                <label for="blood-a" class="radio-label">A형</label>
+                <input id="blood-a" type="radio" name="blood-type">
+
+                <label for="blood-b" class="radio-label">B형</label>
+                <input id="blood-b" type="radio" name="blood-type">
+
+                <label for="blood-o" class="radio-label">O형</label>
+                <input id="blood-o" type="radio" name="blood-type">
+
+                <label for="blood-ab" class="radio-label">AB형</label>
+                <input id="blood-ab" type="radio" name="blood-type">
+            </div>
+
+            <div class="form-line">
+                <span class="form-title">취미</span>
+                <label for="book" class="checkbox-label">독서</label>
+                <input id="book" type="checkbox" name="hobby">
+
+                <label for="music" class="checkbox-label">음악</label>
+                <input id="music" type="checkbox" name="hobby">
+
+                <label for="trip" class="checkbox-label">여행</label>
+                <input id="trip" type="checkbox" name="hobby">
+
+                <label for="coding" class="checkbox-label">코딩</label>
+                <input id="coding" type="checkbox" name="hobby">
+
+                <label for="hobby-ot" class="checkbox-label">기타</label>
+                <input id="hobby-ot" type="checkbox" name="hobby">
+            </div>
+
+            <div class="form-line">
+                <span class="form-title" id="show-me" autocomplete="off">자기소개</span>
+                <textarea name="" id=""></textarea>
+            </div>
+
+            <div class="form-line" id="button-line">
+                <button type="submit" class="button-main">등록</button>
+                <button type="reset" class="button-main">초기화</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title> Html5.Ex04 </title>
+    </head>
+
+    <body>
+        chapter 목차 
+        <ol>
+            <li> 
+                <a href="./Ex01.html" > chapter.01 </a> 
+            </li>
+            <li> 
+                <a href="./Ex02.html" > chapter.02 </a> 
+            </li>
+            <li> 
+                <a href="./Ex03.html" > chapter.03 </a> 
+            </li>
+            <li> 
+                <a href="./Ex04.html" > chapter.04 </a> 
+            </li>
+            <li>
+                <a href="./Ex05.html" > chapter.05 </a>
+            </li>
+            <li>
+                <a href="./Ex06.html" > chapter.06 </a>
+            </li>
+            <li>
+                <a href="./Ex07.html" > chapter.07 </a>
+            </li>
+            <li>
+                <a href="./Ex08.html" > chapter.08 </a>
+            </li>
+            <li>
+                <a href="./Ex09.html" > chapter.09 </a>
+            </li>
+        </ol>
+        <hr>
+
+        <h1> Html 공부하기 </h1>
+        <h2> chapter04. a, img 요소 </h2>
+
+        <a href="https://www.naver.com/" > Naver </a> <br>
+        <!-- a태그는 다른 웹페이지로 연결해준다.
+        href는 링크한 문서나 사이트의 주소
+        target은 목표 새창(_blank) 또는 자신의창(_self) 지정-->
+        <a href="https://www.google.com/?hl=ko" target="_blank"> Google </a> <br>
+        <!-- <a href="https://www.google.com/?hl=ko" target="_blank"> Google </a> 구글을 새창에서 보여주세요 -->
+        <a href="https://chatgpt.com/" target="_self"> GPT </a> <br>
+        <!-- <a href="https://chatgpt.com/" target="_self"> GPT </a> 지피티를 현재창에서 보여주세요 -->
+
+        <!-- <h2> chapter 목록 </h2>
+         <ul>
+            <il> <a href="./Ex01.html" target="_blank"> chapter.01 </a> </il> <br>
+            <il> <a href="./Ex02.html" target="_blank"> chapter.02 </a> </il> <br>
+            <il> <a href="./Ex03.html" target="_blank"> chapter.03 </a> </il>
+         </ul> -->
+         <!-- 새로운 링크로 이동할수 있는것을 조금 심화해서 ul 과 li를 활용해서 리스트를 지정하고 a태그 사용 
+         ./ 같은 폴더내 다른파일을 연결하고 싶을때 사용한다 -->
+
+        <br>
+        <ul> 그룹별 사이트
+            <li>그룹A
+                <ul>
+                    <li><a href="https://www.naver.com/" target="Web">네이버당</a></li>
+                    <li><a href="https://www.google.com/" target="Web">구글이당</a></li>
+                </ul>
+            </li>
+
+            <li>그룹B
+                <ul>
+                    <li><a href="https://www.coupang.com/" target="nameshop">쿠팡이당</a></li>
+                    <li><a href="https://ko.aliexpress.com/" target="nameshop">알리당</a></li>
+                </ul>
+            </li>
+
+            <li>그룹C
+                <ul>
+    <!-- target은 _blank _self 외에도 임의로 target="???" 이름을 지어 그룹을 만들수 있다 -->
+                    <li><a href="https://www.inflearn.com/" target="program">인프런</a></li>
+                    <li><a href="https://programmers.co.kr/" target="program">프로그래머스</a></li>
+                    <li><a href="https://github.com/" target="program">깃허브</a></li>
+                </ul>
+            </li>
+        </ul><br><br>
+
+
+        <img src="C:\JavaStudy\Workspace_html\html.01\img\jung.jpg" alt="정"><!-- 절대경로 -->
+        <img src="C:\JavaStudy\Workspace_html\html.01\img\yoo.jpg" alt="유">
+        <img src="./img/yoo.jpg" alt="유"> <!--상대경로 -->
+        <!-- 상대적경로는 자신의 위치부터 찾아가는 방식.././ 
+        절대적경로는 지정되어있는 주소로 찾아가는 방식 -->
+        <img src="https://imagescdn.gettyimagesbank.com/500/201907/jv11849771.jpg" alt="Dot">
+        <img src="https://cdn.pixabay.com/animation/2023/01/25/07/53/07-53-36-486_512.gif" alt="gif">
+        <br><br>
+
+        <h3> 이미지속 링크 같이 넣기 </h3><br>
+
+        <a href="https://www.naver.com/">
+            <img src="../html.01/img/다운로드.jfif" width="150">
+        </a>
+    </body>
+
+</html>

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.red{color: #ff0000;}
+p.red{background-color: lawngreen;}
+li.red#green{color: blueviolet;}
+ol li{color: #ee77aa;}
+ol li li{color: aqua;}
+
+/* 띄워쓰기를 하면 기준점이 되고 해당되지는 않는다
+p.ex1 p태그와 ex1 클래스가 있는것
+p .ex1 p기준 으로 ex1 클래스가 있는것 */
+
+/* 하위 선택자와 자식 선택자 */
+/* 하위선택자는 자신기준 해당하는 태그 전부를 지정한다
+자식선택자는 자신기준 1촌까지만 해당하는 태그를 지정한다 */

@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+input[type="text"]{background-color: aquamarine;}
+a[href]{background-color: blueviolet;}
+a[target="_blank"]{color: black;}
+a[target="_self"]{color: yellowgreen;}
+a[class]{color: bisque;}
+a[class="nara"]{color: green;}

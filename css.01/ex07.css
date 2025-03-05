@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+#blue{color: blue;}
+#red{color: red;}
+.green{color: green;}
+.cl1{color: blueviolet;}
+.cl1.cl2{color: #55ffcc;}
+p.cl3#i1{color: #ddaa00;}

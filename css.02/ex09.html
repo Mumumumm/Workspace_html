@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css 09</title>
+    <style>
+        .um{
+            background-image: url(./img/엄준식.jfif);
+            /* 백그라운드 이미지는 url() */
+            width: 300px; height: 300px;
+
+            background-repeat: no-repeat ; /* 백그라운드 리피트 해당 반복여부 */
+
+            background-color: #333333; /* 갖고있는 공간 확인용 */
+
+            background-size: 150px 30px; 
+            /* 너비 높이 사이즈 설정 또는 auto */
+            /* background-size: cover; */
+
+            background-position: center center;
+            /* 가운데에서 가운데 위치 이외에도 left center; top letf; 가능 */
+            /* center, top, bottom, left, right 등이 있다*/
+
+            background-attachment:fixed;
+            /* fixed는 위치시킨곳에 항상고정되어있어 스크롤해도 따라간다 박스 안에서만 */
+        }
+    </style>
+</head>
+<body>
+    <div class="um">
+        엄....준식
+    </div>
+    <br><br><br><br>
+    <div>
+        엄준식 텍스트 정보 <br>
+        <img src="./img/엄준식.jfif" alt="엄..준..식">
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .box-red{
+            border: 1px solid black; 
+            background-color: crimson;
+            width: 300px;
+            margin: 20px 40px 60px 80px;
+
+            padding-top: 10px;
+            padding-right: 30px;
+            padding-bottom: 60px;
+            padding-left: 100px;
+        }
+        .box-green{
+            border: 1px solid #000000;
+            background-color: darkgreen;
+            width: 300px;
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+
+            padding: 100px 60px 30px 10px;
+        }
+        .box-blue{
+            width: 278px;
+            background-color: steelblue;
+            border: 1px solid black;
+            padding: 0px 20px 0px 0px;
+            /* 너비 300을 유지하기 위해 좌우 solid 1px씩 그리고 패딩 20px값을 뺀다 그럼 278px */
+        }
+        .box-blue{
+            box-sizing: border-box;
+            /* 박스 사이즈로 보더박스 고정시키기*/
+            width: 300px;
+            background-color: slateblue;
+            border: 1px solid black;
+            padding: 0px 20px 0px 0px;
+        }
+        .ilne-red{
+            background-color: orangered;
+            border: 1px solid black;
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+        .umm{
+            background-image: url(./img/엄준식.jfif);
+            width: 300px; height: 300px;
+            padding: 150px;
+        }
+        img{
+            width: 300px;height: 300px;
+        }
+        /* margin 은 상하가 서로 겹칠경우 상쇄된다 더 큰 숫자로바뀐다 */
+    </style>
+</head>
+<body>
+    <div class="box-red">
+        css에서 가장 보편적이고 많이 사용되는 마진과 패딩에 대한값이 어떻게 적용되는지 알아봅시다
+    </div>
+    <div class="box-green">
+        css에서 가장 보편적이고 많이 사용되는 마진과 패딩에 대한값이 어떻게 적용되는지 알아봅시다
+    </div>
+    <br><br><br>
+    <div class="box-blue">
+        css에서 가장 보편적이고 많이 사용되는 마진과 패딩에 대한값이 어떻게 적용되는지 알아봅시다
+    </div>
+    <div class="box-blue">
+        css에서 가장 보편적이고 많이 사용되는 마진과 패딩에 대한값이 어떻게 적용되는지 알아봅시다
+    </div>
+
+    <span class="ilne-red">인라인 요소에서 마진은 과연 어떻게될것인가</span>
+    <span class="ilne-red">인라인 요소에서 마진은 과연 어떻게될것인가</span>
+
+    <br><br><br>
+    <div class="umm"><img src="./img/flower.jpg"></div>
+</body>
+</html>

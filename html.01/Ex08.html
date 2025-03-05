@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Html5.Ex08 </title>
+</head>
+
+<body>
+    chapter 목차 
+    <ol>
+        <li> 
+            <a href="./Ex01.html" > chapter.01 </a> 
+        </li>
+        <li> 
+            <a href="./Ex02.html" > chapter.02 </a> 
+        </li>
+        <li> 
+            <a href="./Ex03.html" > chapter.03 </a> 
+        </li>
+        <li> 
+            <a href="./Ex04.html" > chapter.04 </a> 
+        </li>
+        <li>
+            <a href="./Ex05.html" > chapter.05 </a>
+        </li>
+        <li>
+            <a href="./Ex06.html" > chapter.06 </a>
+        </li>
+        <li>
+            <a href="./Ex07.html" > chapter.07 </a>
+        </li>
+        <li>
+            <a href="./Ex08.html" > chapter.08 </a>
+        </li>
+        <li>
+            <a href="./Ex09.html" > chapter.09 </a>
+        </li>
+    </ol>
+    <hr>
+
+    <h1> Html 공부하기 </h1>
+    <h2> chapter08. form 요소 - input(type="checkbox", type="radio") </h2>
+
+    <form>
+        <label for="sorry"> 내가 잘못했는가? </label> 
+        <input id="sorry" type="checkbox">
+        <br>
+        <label for="nosorry"> 상대가 잘못했는가? </label>
+        <input id="nosorry" type="checkbox">
+        <br>
+        <label for="re"> 화해 할 것인가? </label>
+        <input id="re" type="checkbox">
+        <br>
+        <input type="text" placeholder="할 말 있으면 적으세요."> 
+        <button type="submit" style="background-color: gray;"> 응답 제출 </button>
+    </form>
+    <br>
+        <label for="book"> 독서 </label> 
+        <input id="book" type="checkbox" name="hobby" value="book" checked="checked">
+        <!-- checked="checked" 기존 체크되어있는 표시 -->
+
+        <label for="music"> 음악 </label> 
+        <input id="music" type="checkbox" name="hobby" value="music" >
+
+        <label for="trip"> 여행 </label> 
+        <input id="trip" type="checkbox" name="hobby" value="trip">
+        <br><br>
+        취미1<input type="text" name="hobby" value=""><br>
+        취미2<input type="text" name="" value=""><br>
+        취미3<input type="text" name="" value=""><br>
+        <br><br>
+
+        <label for="T"> 타격 </label>
+        <input id="T" type="radio" name="ct">
+
+        <label for="S"> 연막 </label>
+        <input id="S" type="radio" name="ct">
+
+        <label for="G"> 감시 </label>
+        <input id="G" type="radio" name="ct">
+
+        <label for="C"> 척후 </label>
+        <input id="C" type="radio" name="ct">
+
+        <br><br>
+
+        <label for="map1"> 프렉처 </label>
+        <input id="map1" type="radio" name="M">
+
+        <label for="map2"> 어비스 </label>
+        <input id="map2" type="radio" name="M">
+
+        <label for="map3"> 펄 </label>
+        <input id="map3" type="radio" name="M">
+        <!-- id는 절대 중복되어선 안된다 name으로 그룹을 묶을수 있다 -->
+</body>
+</html>
+
+

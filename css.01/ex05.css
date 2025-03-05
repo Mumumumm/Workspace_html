@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* *{} *은 전체선택자 */
+
+ol>li{color: green;
+font-size: 20px;}
+
+ol>li>ul>li{color: blue;} /* 폰트사이즈는 따로 지정 안했기때문에 그대로 받는다 */
+tr>th{color: lightcoral;}  /* > 꺽쇠를 이용해서 자식을 지정하기 붙여서 써야한다 */
+.c1{color: darkgray;}
+.c1#i1{background-color: black;}  /* 클래스 이름중에서 아이디가 i1인것 */
+p#p{color: brown;} /* p태그중에서 이이디가 p인것 */
+
+.gonfalon{
+    background-color: rosybrown;
+    font-size: 30px;
+    color: royalblue;
+}
+
+.gonfalon#speed{color: black;}
+.llii{font-size: 10px;}
+
+ol> li li#inter{text-decoration: underline;}
+/* ol안에 li 를따르는 li 그중에 id를 inter갖고 있는li lili 사이에 스페이스바 */
+
+h1{text-align: center;}
+/* 텍스트 정렬 */

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Html5.Ex07 </title>
+    <style>
+        button[type="submit"]{color: red;}
+        input[name="id"]{color: #00aaff;}
+    </style>
+</head>
+
+<body>
+    chapter 목차 
+    <ol>
+        <li> 
+            <a href="./Ex01.html" > chapter.01 </a> 
+        </li>
+        <li> 
+            <a href="./Ex02.html" > chapter.02 </a> 
+        </li>
+        <li> 
+            <a href="./Ex03.html" > chapter.03 </a> 
+        </li>
+        <li> 
+            <a href="./Ex04.html" > chapter.04 </a> 
+        </li>
+        <li>
+            <a href="./Ex05.html" > chapter.05 </a>
+        </li>
+        <li>
+            <a href="./Ex06.html" > chapter.06 </a>
+        </li>
+        <li>
+            <a href="./Ex07.html" > chapter.07 </a>
+        </li>
+        <li>
+            <a href="./Ex08.html" > chapter.08 </a>
+        </li>
+        <li>
+            <a href="./Ex09.html" > chapter.09 </a>
+        </li>
+    </ol>
+    <hr>
+
+    <h1> Html 공부하기 </h1>
+    <h2> chapter07. form 요소 - input(type="text", type="password") </h2>
+    <!-- <input type=""> -->
+    <!-- type 속성에 추가하는 value 속성 -->
+    <form action="" method="">
+        <label for="userid">아이디</label>
+        <input id="userid" type="text" name="id" value="실제값"
+        placeholder="placeholder속성 가짜값">
+        <!-- label은 말그대로 라벨 for은 이어주는 속성 id는 고유 id  -->
+        <!-- for 로 연결시켜줘서 라벨링된 아이디를 text로 이동 -->
+        <br>
+
+        <label for="userpw">패스워드</label>
+        <input id="userpw" type="password" name="pw" value=""
+        placeholder="비번내놔"> 
+        <br>
+
+        <button type="submit" style="background-color: gold;">
+            진짜 눌러라
+        </button>
+        <button type="reset" style="background-color: brown; color: bisque;">
+            정보 다 날려버림
+        </button>
+    </form><br>
+        <!-- action="" 어디로 보낼지(행동) method="" 어떤 방식으로 -->
+        <!-- <input type="text" name="" value=""> name 과 value 확장속성 -->
+        <!-- form 안에 묶어넣기 안에 내용이 한번에 전달 -->
+        <input type="file"> <br>
+        <input type="date"> <br>
+        <input type="number" 
+        min="1"
+        max="100"
+        placeholder="최대100"
+        > <br><br>
+
+        <input type="button" value="value에 적어">  <br>
+        <input type="color">
+</body>
+</html>

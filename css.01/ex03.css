@@ -1,0 +1,19 @@
+@charset "UTF-8"; /* css 지정 */
+
+
+
+
+*{color: darkcyan;}
+/* *는 전체 를 포함 시트는 위에서 아래로 아래가 우선순위 덮어씌운다 */
+/* 아래일수록 우선순위이며 구체적으로 지정해주면 우선순위가 올라간다 */
+p {color: olive;} 
+/* p 태그를 {} 에 속성과 값을 넣어 지정 */
+h1{color: #cd2881;}
+p.aa{color: blueviolet;}
+li{color: lightcoral;}
+h3{color: darkgoldenrod;}
+h3.cc{color: darkblue;}
+h3.cc.bb{color: #cd2881;}
+#no1{color: lightgreen;} /* #으로 id 를 지정 가장 우선순위 */
+
+

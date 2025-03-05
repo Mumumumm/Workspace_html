@@ -1,0 +1,28 @@
+.box1{
+    background-color: #ffff00;
+    width: 300px; height: 150px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: rgba(154, 205, 50, 0.3);
+}
+.box2{
+    display: inline-block;
+    width: 200px; height: 200px;
+    border-style: dotted;
+    border-width: 3px;
+    text-align: center;
+}
+.box3{
+    width: 500; height: 200;
+    background-color: #b69277;
+    border: solid 4px #f16b43;
+    /* 이런식으로 보더 안에 한번에 스타일 두께 색상설정이 가능하다 */
+}
+.box4{
+    background-color: slategray;
+    width: 200px; height: 200px;
+    border-top: solid 4px #000;
+    border-right: double 5px #000;
+    border-bottom: dotted 6px #000;
+    border-left: dashed 7px #000;
+}

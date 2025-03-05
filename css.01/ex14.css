@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.txt1{
+    text-align: right;
+}
+.txt2{
+    text-align: left;
+}
+.txt3{
+    text-align: center;
+}
+
+.inde{
+    text-indent: 30px;
+}
+/* 들여쓰기 indent */
+
+.lineh{
+    line-height: 40px;
+}
+/* 줄 간격 조절 */
+.stul{
+    list-style-type: square;
+}
+ol>li {
+    list-style: upper-roman;
+}
+
+/* 방법이 너무많다 클래스를 넣거나 아이디를 넣거나 div span에 한번에 넣거나
+> 또는 스페이스바를 이용해 자손에게 주거나  */
+

@@ -1,0 +1,35 @@
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+table>thead{
+    background-color: #eeeeee;
+}
+table>thead>tr>th,
+table>tbody>tr>td{
+    border: solid 1px #000;
+}
+/* 같을거 같아서  , 로 그룹짓기 */
+.left{
+    text-align: left;
+}
+.tr1:hover{
+    background-color: yellow;
+}
+.tr2:hover{
+    background-color: yellow;
+}
+.tr3:hover{
+    background-color: yellow;
+}
+.tr4:hover{
+    background-color: yellow;
+}
+.tr5:hover{
+    background-color: yellow;
+}
+
+/* :link
+:visited
+:hover
+:active */

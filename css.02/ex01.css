@@ -1,0 +1,17 @@
+.box-type1{
+    background-color: palegreen;
+    width: 500px;
+    height: 60px;
+}
+.box-type2{
+    background-color: palevioletred;
+    width: 700px;
+    height: 80px;
+}
+.box-type3{
+    background-color: darkkhaki;
+    display: inline-block;
+    width: 400px;
+    height: 80px;
+    text-align: center;
+}

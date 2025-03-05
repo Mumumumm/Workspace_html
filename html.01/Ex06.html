@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Html5.Ex06 </title>
+</head>
+
+<body>
+    chapter 목차 
+    <ol>
+        <li> 
+            <a href="./Ex01.html" > chapter.01 </a> 
+        </li>
+        <li> 
+            <a href="./Ex02.html" > chapter.02 </a> 
+        </li>
+        <li> 
+            <a href="./Ex03.html" > chapter.03 </a> 
+        </li>
+        <li> 
+            <a href="./Ex04.html" > chapter.04 </a> 
+        </li>
+        <li>
+            <a href="./Ex05.html" > chapter.05 </a>
+        </li>
+        <li>
+            <a href="./Ex06.html" > chapter.06 </a>
+        </li>
+        <li>
+            <a href="./Ex07.html" > chapter.07 </a>
+        </li>
+        <li>
+            <a href="./Ex08.html" > chapter.08 </a>
+        </li>
+        <li>
+            <a href="./Ex09.html" > chapter.09 </a>
+        </li>
+    </ol>
+    <hr>
+
+    <h1> Html 공부하기 </h1>
+    <h2> chapter06. table 모든요소적용 </h2>
+    <h3> thead, tbody, tfoot, th, scope="row", scope="col", caption </h3> <br>
+
+        <table border="1">
+        <!-- 테이블 가로폭 정의 -->
+        <colgroup>
+            <col style="width: 120px;">
+            <col style="width: 70px;">
+            <col style="width: 70px;">
+            <col style="width: 70px;">
+            <col style="width: 80px;">
+        </colgroup>
+
+
+            <caption>제주도특별 자치도 학교현황</caption>
+            <!-- caption 테이블의 제목 -->
+            <thead>
+                <tr>
+                    <th>구분</th>
+                    <th>학교수</th>
+                    <th>학급수</th>
+                    <th>학생수</th>
+                    <th>교원수</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>유치원</th>
+                    <td>117</td>
+                    <td>252</td>
+                    <td>5547</td>
+                    <td>474</td>
+                </tr>
+                <tr>
+                    <th>초등학교</th>
+                    <td>111</td>
+                    <td>1720</td>
+                    <td>37686</td>
+                    <td>2632</td>
+                </tr>
+                <tr>
+                    <th>중학교</th>
+                    <td>44</td>
+                    <td>699</td>
+                    <td>21274</td>
+                    <td>1412</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>합계</th>
+                    <td>272</td>
+                    <td>2671</td>
+                    <td>64507</td>
+                    <td>4518</td>
+                </tr>
+            </tfoot>
+        </table>
+            <!-- 테이블별 구조화 (그룹묶기) thead(머리) tbody(몸통) tfoot(발) -->
+            <!-- 데이터속 바뀌지 않는 부분 th(td의 머리가 되는 행) -->
+            <!-- tr(table row)는 테이블의 가로(행 개수)를 구성하는 태그입니다. 
+            td(table data)는 테이블의 세로(열 개수)를 구성하는 태그입니다 -->
+            <!-- <th scope="row"></th> 해당 행(가로)의 머리가 되는곳 -->
+            <!-- <th scope="col"></th> 해당 열(세로)의 머리가 되는곳 -->
+            <!-- <col style="???: ???;"> 무언가 조정할때 style 속성사용-->
+        <table border="1">
+            <col style="width: 120px;">
+            <col style="width: 120px;">
+            <col style="width: 140px;">
+            <col style="width: 190px;">
+            <col style="width: 120px;">
+
+            <caption>모집분야</caption>
+                <tr>
+                    <th colspan="2">모집직군</th>
+                    <!-- <td></td> -->
+                    <th>모집전공</th>
+                    <th>비고</th>
+                    <th>근무지</th>
+                </tr>
+                <tr>
+                    <th colspan="2">생산기술직</th>
+                    <!-- <td></td> -->
+                    <td>화학공학</td>
+                    <td rowspan="3">전공관련 자격증 우대</td>
+                    <td rowspan="5">충남 서산</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">생산지원직</th>
+                    <th>공무</th>
+                    <td>기계,전기</td>
+                    <!-- <td></td> -->
+                    <!-- <td></td> -->
+                </tr>
+                <tr>
+                    <!-- <td></td> -->
+                    <th>안전환경</th>
+                    <td>안전,환경</td>
+                    <!-- <td></td> -->
+                    <!-- <td></td> -->
+                </tr>
+                <tr>
+                    <th colspan="2">연구개발직</th>
+                    <!-- <td></td> -->
+                    <td>화학,화학공학</td>
+                    <td>석사</td>
+                    <!-- <td></td> -->
+                </tr>
+                <tr>
+                    <th colspan="2">경영지원직</th>
+                    <!-- <td></td> -->
+                    <td>상경계열</td>
+                    <td>-</td>
+                    <!-- <td></td> -->
+                </tr>
+                <tr>
+                    <th colspan="2">영업마케팅직</th>
+                    <!-- <td></td> -->
+                    <td>상경계열</td>
+                    <td> - </td>
+                    <td>서울중구</td>
+                </tr>
+        </table>
+    
+</body>
+</html>

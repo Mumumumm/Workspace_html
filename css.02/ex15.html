@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css</title>
+    <style>
+        ul>li{
+            /* display: inline-block; */
+            background-image: url(./img/star.jpg);
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: 15px;
+            border-right: 3px solid black;
+            list-style: none;
+            float: left;
+            margin-right: 15px;
+            padding-right: 30px;
+            padding-left: 15px;
+            /* margin: 30px; */
+        }
+        .menu5{
+            border-right: none;
+        }
+        p::after, p::before{content: "엄준식";
+    }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>메뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+        <li>메뉴4</li>
+        <li class="menu5">메뉴5</li>
+    </ul>
+
+    <p>살려줘라</p>
+</body>
+</html>

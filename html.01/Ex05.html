@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title> Html5.Ex05 </title>
+    </head>
+
+    <body>
+        chapter 목차 
+        <ol>
+            <li> 
+                <a href="./Ex01.html" > chapter.01 </a> 
+            </li>
+            <li> 
+                <a href="./Ex02.html" > chapter.02 </a> 
+            </li>
+            <li> 
+                <a href="./Ex03.html" > chapter.03 </a> 
+            </li>
+            <li> 
+                <a href="./Ex04.html" > chapter.04 </a> 
+            </li>
+            <li>
+                <a href="./Ex05.html" > chapter.05 </a>
+            </li>
+            <li>
+                <a href="./Ex06.html" > chapter.06 </a>
+            </li>
+            <li>
+                <a href="./Ex07.html" > chapter.07 </a>
+            </li>
+            <li>
+                <a href="./Ex08.html" > chapter.08 </a>
+            </li>
+            <li>
+                <a href="./Ex09.html" > chapter.09 </a>
+            </li>
+        </ol>
+        <hr>
+
+    
+    <h1> Html 공부하기 </h1>
+    <h2> chapter05. table 요소 </h2> <!-- tr(table rock)은 열, td(table data)는 행 -->
+
+    <h3> 가로4 세로 3</h3>
+    <table border="1">
+            <tr>
+                <td>data(1.1)</td>
+                <td>data(1.2)</td>
+                <td>data(1.3)</td>
+                <td>data(1.4)</td>
+            </tr>
+            <tr>
+                <td>data(2.1)</td>
+                <td>data(2.2)</td>
+                <td>data(2.3)</td>
+                <td>data(2.4)</td>
+            </tr>
+            <tr>
+                <td>data(3.1)</td>
+                <td>data(3.2)</td>
+                <td>data(3.3)</td>
+                <td>data(3.4)</td>
+            </tr>
+        </table>
+        <!-- 속성 표시는 텍스트="" -->
+        <!-- colspan 가로줄 rowspan 세로줄 -->
+
+    <h3> 가로 합치기 </h3>
+    <table border="1">
+            <tr>
+                <td>data(1.1)</td>
+                <td colspan="2">data(1.2)</td>
+                <!-- <td>data(1.3)</td> -->
+                <td>data(1.4)</td>
+            </tr>
+            <tr>
+                <td>data(2.1)</td>
+                <td>data(2.2)</td>
+                <td>data(2.3)</td>
+                <td>data(2.4)</td>
+            </tr>
+            <tr>
+                <td>data(3.1)</td>
+                <td>data(3.2)</td>
+                <td>data(3.3)</td>
+                <td>data(3.4)</td>
+            </tr>
+        </table><br><br>
+
+        <table border="1">
+            <tr>
+                <td>data(1.1)</td>
+                <td colspan="2">data(1.2)</td>
+                <!-- <td>data(1.3)</td> -->
+                <td>data(1.4)</td>
+            </tr>
+            <tr>
+                <td>data(2.1)</td>
+                <td colspan="2">data(2.2)</td>
+                <!-- <td>data(2.3)</td> -->
+                <td>data(2.4)</td>
+            </tr>
+            <tr>
+                <td>data(3.1)</td>
+                <td>data(3.2)</td>
+                <td>data(3.3)</td>
+                <td>data(3.4)</td>
+            </tr>
+        </table><br><br>
+
+    <h3> 세로합치기 </h3>
+        <table border="1">
+            <tr>
+                <td>data(1.1)</td>
+                <td rowspan="2">data(1.2)</td>
+                <td>data(1.3)</td>
+                <td>data(1.4)</td>
+            </tr>
+            <tr>
+                <td>data(2.1)</td>
+                <!-- <td>data(2.2)</td> -->
+                <td>data(2.3)</td>
+                <td>data(2.4)</td>
+            </tr>
+            <tr>
+                <td>data(3.1)</td>
+                <td>data(3.2)</td>
+                <td>data(3.3)</td>
+                <td>data(3.4)</td>
+            </tr>
+        </table><br><br>
+
+        <table border="1">
+            <tr>
+                <td>data(1.1)</td>
+                <td>data(1.2)</td>
+                <td rowspan="3">data(1.3)</td>
+                <td>data(1.4)</td>
+            </tr>
+            <tr>
+                <td rowspan="2">data(2.1)</td>
+                <td>data(2.2)</td>
+                <!-- <td>data(2.3)</td> -->
+                <td>data(2.4)</td>
+            </tr>
+            <tr>
+                <!-- <td>data(3.1)</td> -->
+                <td>data(3.2)</td>
+                <!-- <td>data(3.3)</td> -->
+                <td>data(3.4)</td>
+            </tr>
+        </table><br><br>
+
+        <h3> 가로 세로 합치기 </h3>
+        <table border="1">
+            <tr>
+                <td>data(1.1)</td>
+                <td>data(1.2)</td>
+                <td>data(1.3)</td>
+                <td>data(1.4)</td>
+            </tr>
+            <tr>
+                <td rowspan="2">data(2.1)</td>
+                <td colspan="2">data(2.2)</td>
+                
+                <td>data(2.4)</td>
+            </tr>
+            <tr>
+                
+                <td>data(3.2)</td>
+                <td>data(3.3)</td>
+                <td>data(3.4)</td>
+            </tr>
+        </table><br><br>
+
+        <h3> 테이블 연습 문제.1</h3>
+            <table border="1">
+                <tr>
+                    <td colspan="2">모집직군</td>
+                    
+                    <td>모집전공</td>
+                    <td>비고</td>
+
+                </tr>
+                <tr>
+                    <td colspan="2">생산기술직</td>
+                    
+                    <td>화학공학</td>
+                    <td rowspan="3">전공관련 자격증 우대</td>
+
+                </tr>
+                <tr>
+                    <td rowspan="2">생산지원직</td>
+                    <td>공무</td>
+                    <td>기계,전기</td>
+                    
+
+                </tr>
+                <tr>
+                    
+                    <td>안전환경</td>
+                    <td>안전,환경</td>
+                    
+
+                </tr>
+                <tr>
+                    <td colspan="2">연구개발직</td>
+                    
+                    <td>화학,화학공학</td>
+                    <td>석사</td>
+
+                </tr>
+            </table>
+
+
+        <h3> 테이블 연습 문제.2</h3>
+        <table border="1">
+            <tr>
+                <td colspan="2">모집직군</td>
+                
+                <td>모집전공</td>
+                <td>비고</td>
+                <td>근무지</td>
+            </tr>
+            <tr>
+                <td colspan="2">생산기술직</td>
+                
+                <td>화학공학</td>
+                <td rowspan="3"> 전공관련 자격증 우대</td>
+                <td rowspan="5"> 충남 서산 </td>
+            </tr>
+            <tr>
+                <td rowspan="2"> 생산지원직</td>
+                <td>공무</td>
+                <td>기계,전기</td>
+                
+                
+            </tr>
+            <tr>
+                
+                <td>안전환경</td>
+                <td>안전,환경</td>
+                
+                
+            </tr>
+            <tr>
+                <td colspan="2">연구개발직</td>
+                
+                <td>화학,화학공학</td>
+                <td>석사</td>
+                
+            </tr>
+            <tr>
+                <td colspan="2">경영지원직</td>
+                
+                <td>상경계열</td>
+                <td>-</td>
+                
+            </tr>
+            <tr>
+                <td colspan="2">영업마케팅직</td>
+                
+                <td>상경계열</td>
+                <td> - </td>
+                <td> 서울 중구 </td>
+            </tr>
+        </table>
+
+
+    </body>
+
+</html>

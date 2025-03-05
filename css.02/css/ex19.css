@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+body, div, ul, ol, li, dl, dt,
+h1, h2, h3, h4, h5, h6, 
+form, fieldset, legend, input, select, button 
+table, th, td, tr, textarea, 
+p{
+    margin: 0; padding: 0;
+}
+
+.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+
+/* <-----------------------------초기화-------------------------------> */
+
+body{
+    background-color: #808080;
+    font-family: "맑은 고딕";
+    font-size: 12px;
+}
+input,select,textarea{
+    font: inherit;
+    font-size: 15px;
+}
+.radio-label,.checkbox-label{
+    font-family: inherit;
+    font-size: 15px;
+}
+
+
+/* <---------------------------------전체요소---------------------------------> */
+
+.div-main{
+    background-color: #fff;
+    width: 600px;
+}
+
+h1{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-line{
+    border-bottom: 2px solid #000;
+    padding: 10px 0 10px 0;
+}
+
+.form-title{
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+/* <----------------------------------form안 요소-----------------------------------> */
+
+.text-address{
+    margin-left: 124px;
+}
+
+.text-address> input[type="text"]{
+    width: 350px;
+    margin-top: 5px;
+}
+
+#show-me{
+    float: left;
+}
+
+/* <------------------------------------주소---------------------------------------> */
+
+textarea{
+    width: 400px;
+    height: 100px;
+}
+
+/* <------------------------------------텍스트라인-------------------------------------> */
+
+#button-line{
+    text-align: center;
+}
+
+.button-main{
+    width: 80px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+/* <---------------------ol li--------------------------> */
+ol li{
+    list-style: none;
+    float: left;
+    margin: 0 5px 0 0;
+    
+}
+ol>li:not(:last-child)::after{
+    content: ">";
+    margin-left: 5px;
+}
+.clearfix{
+    clear: both;
+}
+

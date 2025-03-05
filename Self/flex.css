@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+.container{
+    border: 5px solid gray;
+    width: 200px;
+    margin-bottom: 50px;
+
+}
+
+.container.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.num1{
+    border: 3px solid red;
+    
+}
+.num2{
+    border: 3px solid orange;
+
+}
+.num3{
+    border: 3px solid yellow
+
+}
+.num4{
+    border: 3px solid green
+
+}
+.num5{
+    border: 3px solid blue;
+
+}
+.num6{
+    border: 3px solid navy;
+
+}
+.num7{
+        border: 3px solid violet;
+
+}
+.num8{
+        border: 3px solid purple;
+
+}
